@@ -6,25 +6,16 @@ import { Main } from "./components/layout/main";
 export const App = () => {
   return (
     <div className={mainClass}>
-      <div className={boxClass}>
-        <Header />/
-        <Main />
-        <Footer />
-      </div>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 };
 
 const mainClass = css`
   display: flex;
-  justify-content: center;
-  height: 100%;
-  widht: 100%;
-`;
-
-const boxClass = css`
-  max-width: 1280px;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
-  height: 100%;
-  padding: 0 20px;
 `;
