@@ -42,6 +42,7 @@ const boxClass = css`
 const logoClass = css`
   color: #4762ff;
   font-weight: 900;
+  font-family: Inter;
 `;
 
 const routesBoxClass = css`
@@ -55,6 +56,11 @@ const routeClass = css`
   padding: 20px 5px;
   cursor: pointer;
   height: 100%;
+  color: #333333;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
 
   &:hover {
     background: #f8f8f8;

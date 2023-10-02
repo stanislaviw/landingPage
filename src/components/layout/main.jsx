@@ -1,9 +1,14 @@
 import { css } from "@emotion/css";
+import { SectionsAbout } from "../sections/about";
+import { SectionsServices } from "../sections/services";
 
 export const Main = () => {
   return (
     <main className={mainClass}>
-      <div className={boxClass}>Main</div>
+      <div className={boxClass}>
+        <SectionsAbout />
+        <SectionsServices />
+      </div>
     </main>
   );
 };
@@ -20,8 +25,7 @@ const mainClass = css`
 
 const boxClass = css`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   width: 100%;
   max-width: 1280px;
   padding: 0 20px;
