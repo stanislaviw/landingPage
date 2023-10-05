@@ -1,6 +1,7 @@
 import { css } from "@emotion/css";
 import { SectionsAbout } from "../sections/about";
 import { SectionsServices } from "../sections/services";
+import { SectionsGuarantee } from "../sections/guarantee";
 
 export const Main = () => {
   return (
@@ -8,6 +9,7 @@ export const Main = () => {
       <div className={boxClass}>
         <SectionsAbout />
         <SectionsServices />
+        <SectionsGuarantee />
       </div>
     </main>
   );

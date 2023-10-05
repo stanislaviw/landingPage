@@ -1,20 +1,22 @@
 import { css } from "@emotion/css";
+import { PHONE_NUMBER } from "../../constants/constants";
 
 export const SectionsAbout = () => {
   return (
     <section className={mainClass}>
       <div className={boxClass}>
         <div className={textBoxClass}>
-          <h2 className={titleClass}>Електрик в Києві</h2>
-          <p className={phoneClass}>+38 (050) 569-36-37</p>
+          <h2 className={titleClass}>
+            Електрик в Києві <br /> та області
+          </h2>
+          <p className={phoneClass}>{PHONE_NUMBER}</p>
           <p>
             Ремонт будь-якої складності. Якісно, надійно <br /> професійно на
             віки та взагалі дуже класно усім раджу!
           </p>
         </div>
-        <div className={imageBoxClass}>df</div>
       </div>
-      <div></div>
+      <div className={imageBoxClass}>df</div>
     </section>
   );
 };
@@ -40,6 +42,7 @@ const textBoxClass = css`
   display: flex;
   flex-direction: column;
   padding-top: 50px;
+  width: 100%;
 `;
 
 const titleClass = css`
@@ -57,7 +60,9 @@ const phoneClass = css`
 `;
 
 const imageBoxClass = css`
-  width: 300px;
-  height: 600px;
+  margin-top: 50px;
+  width: 40%;
+  height: 55%;
   overflow: hidden;
+  background: #4762ff;
 `;

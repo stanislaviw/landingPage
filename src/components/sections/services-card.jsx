@@ -1,14 +1,20 @@
 import { css } from "@emotion/css";
 
-export const SectionsServicesItem = () => {
+export const SectionsServicesCard = ({ item }) => {
+  const { title, servises } = item;
+
   return (
     <div className={mainClass}>
+      <div className={imageClass}></div>
       <div className={textBoxClass}>
-        <h2 className={titleClass}>Послуги</h2>
-        <p className={textClass}>
-          Будь-які послуги, які не представлені <br /> тут в категоріях можуть
-          бути обговорені по телефону
-        </p>
+        <h2 className={titleClass}>{title}</h2>
+        <ul className={boxClass}>
+          {servises.map((item, index) => (
+            <li key={index} className={textClass}>
+              - {item};
+            </li>
+          ))}
+        </ul>
       </div>
       <div></div>
     </div>
@@ -20,8 +26,19 @@ const mainClass = css`
   border-radius: 9px;
   overflow: hidden;
   padding: 25px 28px;
-  width: 400px;
+  min-width: 300px;
   height: 400px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+const imageClass = css`
+  width: 100%;
+  height: 50%;
+  border-radius: 9px;
+  background: #4762ff;
 `;
 
 const textBoxClass = css`
@@ -29,8 +46,6 @@ const textBoxClass = css`
   width: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   gap: 10px;
 `;
 
@@ -40,6 +55,14 @@ const titleClass = css`
   font-family: Inter;
   font-weight: 700;
   word-wrap: break-word;
+  text-align: center;
+`;
+
+const boxClass = css`
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
 `;
 
 const textClass = css`

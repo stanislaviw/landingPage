@@ -1,5 +1,71 @@
 import { css } from "@emotion/css";
-import { SectionsServicesItem } from "./services-item";
+import { SectionsServicesCard } from "./services-card";
+
+const data = [
+  {
+    title: "Підключення електроустаткування",
+    servises: [
+      "Діагностика несправностей",
+      "Підлючення будь-яких приборів",
+      "Ремонт",
+      "Сервіс",
+    ],
+  },
+  {
+    title: "Насоси та насосні станції",
+    servises: [
+      "Підключення",
+      "Діагностика",
+      "Ремонт",
+      "Роботи з наcосними станціями з управлінням частотного регулювання VF",
+    ],
+  },
+  {
+    title: "Електротехніка",
+    servises: [
+      "Підключення генераторів(діагностика/cервіс/ремонт",
+      "Встановлення стабілізаторів напруги",
+      "Збір електрощитів(битових та промислових)",
+      "Сервіс",
+    ],
+  },
+  {
+    title: "Розумний дім",
+    servises: [
+      "Підключення",
+      "Обслуговування",
+      "Монтаж електропроводки для дому",
+      "Підключення та установка відеоспостереження",
+    ],
+  },
+  {
+    title: "Промислові системи автоматизації",
+    servises: [
+      "Модернізація обладнання",
+      "Налаштування",
+      "Обслуговування",
+      "Діагностика станків та електроприладів",
+    ],
+  },
+  {
+    title: "Басейни та сауни",
+    servises: [
+      "Обслуговування електропристроїв",
+      "Діагностика блоків управління перетворювачів чистот",
+    ],
+  },
+  {
+    title: "Ліфти",
+    servises: [
+      "Обслуговування",
+      "Ремонт",
+      "Пошук поломок",
+      "Консультація по стану",
+      "Запуск зупинених кабін",
+      "Евакуація пасажирів",
+    ],
+  },
+];
 
 export const SectionsServices = () => {
   return (
@@ -12,9 +78,9 @@ export const SectionsServices = () => {
         </p>
       </div>
       <div className={servicesClass}>
-        <SectionsServicesItem />
-        <SectionsServicesItem />
-        <SectionsServicesItem />
+        {data.map((item, index) => (
+          <SectionsServicesCard key={index} item={item} />
+        ))}
       </div>
     </section>
   );
@@ -57,4 +123,5 @@ const textClass = css`
 const servicesClass = css`
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
 `;

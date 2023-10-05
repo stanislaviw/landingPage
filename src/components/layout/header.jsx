@@ -63,6 +63,6 @@ const routeClass = css`
   word-wrap: break-word;
 
   &:hover {
-    background: #f8f8f8;
+    background: #f4f6fa;
   }
 `;
