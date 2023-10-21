@@ -3,6 +3,7 @@ import { css } from "@emotion/css";
 const ROUTES = ["Про нас", "Послуги", "Контакти"];
 
 export const Header = () => {
+
   return (
     <header className={mainClass}>
       <div className={boxClass}>
@@ -11,9 +12,9 @@ export const Header = () => {
         </a>
         <div className={routesBoxClass}>
           {ROUTES.map((item, index) => (
-            <a href="/" className={routeClass} key={index}>
+            <button className={routeClass} key={index}>
               {item}
-            </a>
+            </button>
           ))}
         </div>
       </div>
@@ -43,6 +44,8 @@ const logoClass = css`
   color: #4762ff;
   font-weight: 900;
   font-family: Inter;
+  border: 3px solid #4762ff;
+  padding: 2px 4px;
 `;
 
 const routesBoxClass = css`
@@ -61,6 +64,7 @@ const routeClass = css`
   font-family: Inter;
   font-weight: 500;
   word-wrap: break-word;
+  border: none;
 
   &:hover {
     background: #f4f6fa;

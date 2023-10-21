@@ -16,7 +16,7 @@ export const SectionsAbout = () => {
           </p>
         </div>
       </div>
-      <div className={imageBoxClass}>df</div>
+      <div className={imageBoxClass}></div>
     </section>
   );
 };
@@ -24,10 +24,11 @@ export const SectionsAbout = () => {
 const mainClass = css`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   background: white;
   color: #1a1a1a;
-  height: 600px;
+  padding-top: 20px;
 `;
 
 const boxClass = css`
@@ -35,13 +36,11 @@ const boxClass = css`
   justify-content: space-between;
   aling-items: center;
   gap: 16px;
-  padding-top: 50px;
 `;
 
 const textBoxClass = css`
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
   width: 100%;
 `;
 
@@ -60,9 +59,8 @@ const phoneClass = css`
 `;
 
 const imageBoxClass = css`
-  margin-top: 50px;
-  width: 40%;
-  height: 55%;
+  width: 500px;
+  height: 500px;
   overflow: hidden;
   background: #4762ff;
 `;

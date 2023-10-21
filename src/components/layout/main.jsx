@@ -1,15 +1,15 @@
 import { css } from "@emotion/css";
 import { SectionsAbout } from "../sections/about";
 import { SectionsServices } from "../sections/services";
-import { SectionsGuarantee } from "../sections/guarantee";
+import { SectionsContacts } from "../sections/contacts";
 
-export const Main = () => {
+export const Main = ({ refs }) => {
   return (
     <main className={mainClass}>
       <div className={boxClass}>
         <SectionsAbout />
         <SectionsServices />
-        <SectionsGuarantee />
+        <SectionsContacts />
       </div>
     </main>
   );
@@ -28,7 +28,8 @@ const mainClass = css`
 const boxClass = css`
   display: flex;
   flex-direction: column;
+  gap: 60px;
   width: 100%;
   max-width: 1280px;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
 `;

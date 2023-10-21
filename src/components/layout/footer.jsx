@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import { PHONE_NUMBER } from "../../constants/constants";
 
 export const Footer = () => {
   const date = new Date();
@@ -8,18 +9,16 @@ export const Footer = () => {
     <footer className={mainClass}>
       <div className={boxClass}>
         <div className={contentClass}>
-          <div className={logoClass}>ELECTRO</div>
-          <div>
+          <div className={footerBoxClass}>
             <h5 className={titleClass}>Навігація</h5>
             <p className={textClass}>Про нас</p>
             <p className={textClass}>Послуги</p>
           </div>
-          <div>
+          <div className={footerBoxClass}>
             <h5 className={titleClass}>Контакти:</h5>
-            <p className={textClass}>+38 (099) 302 34 54</p>
-            <p className={textClass}>+38 (099) 302 34 54</p>
+            <p className={textClass}>{PHONE_NUMBER}</p>
           </div>
-          <div>
+          <div className={footerBoxClass}>
             <h5 className={titleClass}>Месенджери:</h5>
             <p className={textClass}>Telegram</p>
             <p className={textClass}>Viber</p>
@@ -57,22 +56,23 @@ const contentClass = css`
   width: 100%;
 `;
 
-const logoClass = css`
-  color: #4762ff;
-  font-weight: 900;
-`;
-
 const titleClass = css`
-  color: white;
+  color: #fff;
   font-size: 20px;
   font-family: Inter;
   font-weight: 500;
 `;
 
 const textClass = css`
-  color: white;
+  color: #fff;
   font-size: 16px;
   font-family: Inter;
   font-weight: 400;
   word-wrap: break-word;
+`;
+
+const footerBoxClass = css`
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 `;

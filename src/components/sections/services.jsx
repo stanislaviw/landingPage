@@ -73,7 +73,7 @@ export const SectionsServices = () => {
       <div className={textBoxClass}>
         <h2 className={titleClass}>Послуги</h2>
         <p className={textClass}>
-          Будь-які послуги, які не представлені <br /> тут в категоріях можуть
+          Будь-які послуги, які не представлені тут в категоріях можуть
           бути обговорені по телефону
         </p>
       </div>
@@ -81,6 +81,14 @@ export const SectionsServices = () => {
         {data.map((item, index) => (
           <SectionsServicesCard key={index} item={item} />
         ))}
+      </div>
+      <div className={footerClass}>
+        <h4 className={titleClass}>Гарантія</h4>
+        <p className={textClass}>
+          Від наших майстрів для вас діє пожиттєва гарантія на всі послуги, які
+          представлені тут діє пожиттєва гарантія гарантія і ще там шось і ще
+          там шось і ще там шось раздва три
+        </p>
       </div>
     </section>
   );
@@ -110,6 +118,7 @@ const titleClass = css`
   font-family: Inter;
   font-weight: 700;
   word-wrap: break-word;
+  text-align: center;
 `;
 
 const textClass = css`
@@ -124,4 +133,13 @@ const servicesClass = css`
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
+  justify-content: center;
+`;
+
+const footerClass = css`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 `;

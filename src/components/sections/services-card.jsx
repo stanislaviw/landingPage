@@ -5,7 +5,9 @@ export const SectionsServicesCard = ({ item }) => {
 
   return (
     <div className={mainClass}>
-      <div className={imageClass}></div>
+      <div className={imageBoxClass}>
+        <div className={imageClass}></div>
+      </div>
       <div className={textBoxClass}>
         <h2 className={titleClass}>{title}</h2>
         <ul className={boxClass}>
@@ -27,6 +29,7 @@ const mainClass = css`
   overflow: hidden;
   padding: 25px 28px;
   min-width: 300px;
+  max-width: 350px;
   height: 400px;
   flex: 1;
   display: flex;
@@ -34,9 +37,16 @@ const mainClass = css`
   gap: 10px;
 `;
 
-const imageClass = css`
+const imageBoxClass = css`
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 50%;
+`;
+
+const imageClass = css`
+  width: 168px;
+  height: 140px;
   border-radius: 9px;
   background: #4762ff;
 `;
