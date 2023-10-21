@@ -35,6 +35,10 @@ const mainClass = css`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media (max-width: 800px) {
+    padding: 15px 15px;
+  }
 `;
 
 const imageBoxClass = css`
@@ -66,6 +70,10 @@ const titleClass = css`
   font-weight: 700;
   word-wrap: break-word;
   text-align: center;
+
+  @media (max-width: 800px) {
+    font-size: 18px;
+  }
 `;
 
 const boxClass = css`
@@ -81,4 +89,8 @@ const textClass = css`
   font-family: Inter;
   font-weight: 400;
   word-wrap: break-word;
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
 `;

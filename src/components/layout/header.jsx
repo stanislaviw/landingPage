@@ -3,7 +3,6 @@ import { css } from "@emotion/css";
 const ROUTES = ["Про нас", "Послуги", "Контакти"];
 
 export const Header = () => {
-
   return (
     <header className={mainClass}>
       <div className={boxClass}>
@@ -38,6 +37,10 @@ const boxClass = css`
   width: 100%;
   max-width: 1280px;
   padding: 0 20px;
+
+  @media (max-width: 800px) {
+    padding: 0 10px;
+  }
 `;
 
 const logoClass = css`
@@ -68,5 +71,9 @@ const routeClass = css`
 
   &:hover {
     background: #f4f6fa;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 14px;
   }
 `;

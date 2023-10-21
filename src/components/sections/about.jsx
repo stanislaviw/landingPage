@@ -2,6 +2,10 @@ import { css } from "@emotion/css";
 import { PHONE_NUMBER } from "../../constants/constants";
 
 export const SectionsAbout = () => {
+  const copyToClipboard = async (value) => {
+    await navigator.clipboard.writeText(value.toString());
+  };
+
   return (
     <section className={mainClass}>
       <div className={boxClass}>
@@ -9,7 +13,13 @@ export const SectionsAbout = () => {
           <h2 className={titleClass}>
             Електрик в Києві <br /> та області
           </h2>
-          <p className={phoneClass}>{PHONE_NUMBER}</p>
+          <p
+            className={phoneClass}
+            type="button"
+            onClick={() => copyToClipboard(PHONE_NUMBER)}
+          >
+            {PHONE_NUMBER}
+          </p>
           <p>
             Ремонт будь-якої складності. Якісно, надійно <br /> професійно на
             віки та взагалі дуже класно усім раджу!
@@ -28,7 +38,11 @@ const mainClass = css`
   width: 100%;
   background: white;
   color: #1a1a1a;
-  padding-top: 20px;
+  padding: 20px 20px 0 20px;
+
+  @media (max-width: 800px) {
+    padding: 20px 10px 0 10px;
+  }
 `;
 
 const boxClass = css`
@@ -51,11 +65,17 @@ const titleClass = css`
   font-weight: 700;
   line-height: 76px;
   word-wrap: break-word;
+
+  @media (max-width: 800px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 `;
 
 const phoneClass = css`
   ${titleClass};
   color: #4762ff;
+  cursor: pointer;
 `;
 
 const imageBoxClass = css`

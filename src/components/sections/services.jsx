@@ -73,8 +73,8 @@ export const SectionsServices = () => {
       <div className={textBoxClass}>
         <h2 className={titleClass}>Послуги</h2>
         <p className={textClass}>
-          Будь-які послуги, які не представлені тут в категоріях можуть
-          бути обговорені по телефону
+          Будь-які послуги, які не представлені тут в категоріях можуть бути
+          обговорені по телефону
         </p>
       </div>
       <div className={servicesClass}>
@@ -100,6 +100,11 @@ const mainClass = css`
   flex-direction: column;
   gap: 48px;
   justify-content: center;
+  padding: 0 20px;
+
+  @media (max-width: 800px) {
+    padding: 0 10px;
+  }
 `;
 
 const textBoxClass = css`
@@ -119,6 +124,10 @@ const titleClass = css`
   font-weight: 700;
   word-wrap: break-word;
   text-align: center;
+
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
 `;
 
 const textClass = css`
@@ -127,6 +136,11 @@ const textClass = css`
   font-family: Inter;
   font-weight: 400;
   word-wrap: break-word;
+  width: 80%;
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
 `;
 
 const servicesClass = css`

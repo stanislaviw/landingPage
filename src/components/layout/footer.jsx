@@ -48,6 +48,10 @@ const boxClass = css`
   flex-direction: column;
   align-items: center;
   gap: 30px;
+
+  @media (max-width: 800px) {
+    padding: 30px 10px 20px 10px;
+  }
 `;
 
 const contentClass = css`
@@ -61,6 +65,10 @@ const titleClass = css`
   font-size: 20px;
   font-family: Inter;
   font-weight: 500;
+
+  @media (max-width: 800px) {
+    font-size: 16px;
+  }
 `;
 
 const textClass = css`
@@ -69,6 +77,10 @@ const textClass = css`
   font-family: Inter;
   font-weight: 400;
   word-wrap: break-word;
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
 `;
 
 const footerBoxClass = css`

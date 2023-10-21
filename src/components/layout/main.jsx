@@ -31,5 +31,4 @@ const boxClass = css`
   gap: 60px;
   width: 100%;
   max-width: 1280px;
-  padding: 0 20px 20px 20px;
 `;
