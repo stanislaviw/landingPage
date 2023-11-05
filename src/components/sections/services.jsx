@@ -1,5 +1,17 @@
 import { css } from "@emotion/css";
 import { SectionsServicesCard } from "./services-card";
+import { ReactComponent as FisrtIcon } from "../assets/rabota-01.svg";
+import { ReactComponent as SecondIcon } from "../assets/rabota-02.svg";
+import { ReactComponent as ThirdIcon } from "../assets/rabota-03.svg";
+import { ReactComponent as FourthIcon } from "../assets/rabota-04.svg";
+import { ReactComponent as FifthIcon } from "../assets/rabota-05.svg";
+import { ReactComponent as SixthIcon } from "../assets/rabota-06.svg";
+import { ReactComponent as SeventhIcon } from "../assets/rabota-09.svg";
+
+const iconClass = css`
+  width: 168px;
+  height: 168px;
+`;
 
 const data = [
   {
@@ -10,6 +22,7 @@ const data = [
       "Ремонт",
       "Сервіс",
     ],
+    icon: <FisrtIcon className={iconClass} />,
   },
   {
     title: "Насоси та насосні станції",
@@ -19,6 +32,7 @@ const data = [
       "Ремонт",
       "Роботи з наcосними станціями з управлінням частотного регулювання VF",
     ],
+    icon: <SecondIcon className={iconClass} />,
   },
   {
     title: "Електротехніка",
@@ -28,6 +42,7 @@ const data = [
       "Збір електрощитів(битових та промислових)",
       "Сервіс",
     ],
+    icon: <ThirdIcon className={iconClass} />,
   },
   {
     title: "Розумний дім",
@@ -37,6 +52,7 @@ const data = [
       "Монтаж електропроводки для дому",
       "Підключення та установка відеоспостереження",
     ],
+    icon: <FourthIcon className={iconClass} />,
   },
   {
     title: "Промислові системи автоматизації",
@@ -46,6 +62,7 @@ const data = [
       "Обслуговування",
       "Діагностика станків та електроприладів",
     ],
+    icon: <FifthIcon className={iconClass} />,
   },
   {
     title: "Басейни та сауни",
@@ -53,6 +70,7 @@ const data = [
       "Обслуговування електропристроїв",
       "Діагностика блоків управління перетворювачів чистот",
     ],
+    icon: <SixthIcon className={iconClass} />,
   },
   {
     title: "Ліфти",
@@ -64,6 +82,7 @@ const data = [
       "Запуск зупинених кабін",
       "Евакуація пасажирів",
     ],
+    icon: <SeventhIcon className={iconClass} />,
   },
 ];
 

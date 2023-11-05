@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import { PHONE_NUMBER } from "../../constants/constants";
+import { ReactComponent as CopyIcon } from "../../components/assets/copy.svg";
 
 export const SectionsAbout = () => {
   const copyToClipboard = async (value) => {
@@ -19,6 +20,7 @@ export const SectionsAbout = () => {
             onClick={() => copyToClipboard(PHONE_NUMBER)}
           >
             {PHONE_NUMBER}
+            <CopyIcon width="60" height="60" />
           </p>
           <p>
             Ремонт будь-якої складності. Якісно, надійно <br /> професійно на
@@ -76,6 +78,21 @@ const phoneClass = css`
   ${titleClass};
   color: #4762ff;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  > svg {
+    path {
+      fill: #4762ff;
+    }
+
+    &:active {
+      path {
+        fill: transparent;
+      }
+    }
+  }
 `;
 
 const imageBoxClass = css`

@@ -112,14 +112,6 @@ const textClass = css`
   }
 `;
 
-const imageBoxClass = css`
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 const imageClass = css`
   position: absolute;
   top: 5px;

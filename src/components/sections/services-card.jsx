@@ -1,12 +1,12 @@
 import { css } from "@emotion/css";
 
 export const SectionsServicesCard = ({ item }) => {
-  const { title, servises } = item;
+  const { title, servises, icon } = item;
 
   return (
     <div className={mainClass}>
       <div className={imageBoxClass}>
-        <div className={imageClass}></div>
+        <div className={imageClass}>{icon}</div>
       </div>
       <div className={textBoxClass}>
         <h2 className={titleClass}>{title}</h2>
@@ -30,7 +30,6 @@ const mainClass = css`
   padding: 25px 28px;
   min-width: 300px;
   max-width: 350px;
-  height: 400px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -45,14 +44,12 @@ const imageBoxClass = css`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 50%;
 `;
 
 const imageClass = css`
   width: 168px;
-  height: 140px;
+  height: 168px;
   border-radius: 9px;
-  background: #4762ff;
 `;
 
 const textBoxClass = css`
