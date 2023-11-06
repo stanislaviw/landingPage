@@ -47,7 +47,6 @@ const logoClass = css`
   color: #4762ff;
   font-weight: 900;
   font-family: Inter;
-  border: 3px solid #4762ff;
   padding: 2px 4px;
 `;
 
