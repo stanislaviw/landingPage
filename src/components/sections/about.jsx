@@ -20,15 +20,15 @@ export const SectionsAbout = () => {
             onClick={() => copyToClipboard(PHONE_NUMBER)}
           >
             {PHONE_NUMBER}
-            <CopyIcon width="60" height="60" />
+            <CopyIcon className={iconClass} />
           </p>
-          <p>
-            Ремонт будь-якої складності. Якісно, надійно <br /> професійно на
-            віки та взагалі дуже класно усім раджу!
-          </p>
+          <div>
+            <p>Електрик, електромеханік, електрик КІПтаА</p>
+            <p>Ремонт будь-якої складності. Якісно, надійно, професійно.</p>
+          </div>
         </div>
       </div>
-      <div className={imageBoxClass}></div>
+      {/* <div className={imageBoxClass}></div> */}
     </section>
   );
 };
@@ -41,9 +41,11 @@ const mainClass = css`
   background: white;
   color: #1a1a1a;
   padding: 20px 20px 0 20px;
+  height: 600px;
 
   @media (max-width: 800px) {
     padding: 20px 10px 0 10px;
+    height: 400px;
   }
 `;
 
@@ -58,6 +60,16 @@ const textBoxClass = css`
   display: flex;
   flex-direction: column;
   width: 100%;
+`;
+
+const iconClass = css`
+  width: 60px;
+  height: 60px;
+
+  @media (max-width: 800px) {
+    height: 30px;
+    width: 30px;
+  }
 `;
 
 const titleClass = css`
@@ -95,9 +107,9 @@ const phoneClass = css`
   }
 `;
 
-const imageBoxClass = css`
-  width: 500px;
-  height: 500px;
-  overflow: hidden;
-  background: #4762ff;
-`;
+// const imageBoxClass = css`
+//   width: 500px;
+//   height: 500px;
+//   overflow: hidden;
+//   background: #4762ff;
+// `;

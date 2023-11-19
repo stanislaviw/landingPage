@@ -1,19 +1,19 @@
 import { css } from "@emotion/css";
 import { SectionsServicesCard } from "./services-card";
-import { data1 } from "./data";
+import { data } from "./data";
 
 export const SectionsServices = () => {
   return (
-    <section className={mainClass}>
+    <section id="services" className={mainClass}>
       <div className={textBoxClass}>
         <h2 className={titleClass}>Послуги</h2>
         <p className={textClass}>
-          Будь-які послуги, які не представлені тут в категоріях можуть бути
-          обговорені по телефону
+          Будь-які послуги, які не представлені тут можуть бути обговорені по
+          телефону
         </p>
       </div>
       <div className={servicesClass}>
-        {data1.map((item, index) => (
+        {data.map((item, index) => (
           <SectionsServicesCard key={index} item={item} />
         ))}
       </div>
@@ -67,7 +67,7 @@ const textClass = css`
   font-family: Inter;
   font-weight: 400;
   word-wrap: break-word;
-  width: 80%;
+  width: 100%;
   text-align: center;
 
   @media (max-width: 800px) {

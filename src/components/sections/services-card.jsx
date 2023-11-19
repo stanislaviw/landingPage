@@ -37,6 +37,7 @@ const mainClass = css`
 
   @media (max-width: 800px) {
     padding: 15px 15px;
+    min-width: 200px;
   }
 `;
 

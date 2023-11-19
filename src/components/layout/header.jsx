@@ -1,18 +1,22 @@
 import { css } from "@emotion/css";
-
-const ROUTES = ["Про нас", "Послуги", "Контакти"];
+import { scrollToSection } from "../units/scrollToSection";
+import { ROUTES } from "../../constants/constants";
 
 export const Header = () => {
   return (
-    <header className={mainClass}>
+    <header id="top" className={mainClass}>
       <div className={boxClass}>
         <a className={logoClass} href="/">
           ELECTRO
         </a>
         <div className={routesBoxClass}>
-          {ROUTES.map((item, index) => (
-            <button className={routeClass} key={index}>
-              {item}
+          {ROUTES.map((item) => (
+            <button
+              onClick={() => scrollToSection(item.id)}
+              className={routeClass}
+              key={item.id}
+            >
+              {item.title}
             </button>
           ))}
         </div>
@@ -48,6 +52,7 @@ const logoClass = css`
   font-weight: 900;
   font-family: Inter;
   padding: 2px 4px;
+  border: 4px solid #4762ff;
 `;
 
 const routesBoxClass = css`

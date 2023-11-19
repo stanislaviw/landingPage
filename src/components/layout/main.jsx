@@ -1,7 +1,7 @@
 import { css } from "@emotion/css";
 import { SectionsAbout } from "../sections/about";
 import { SectionsServices } from "../sections/services";
-import { SectionsContacts } from "../sections/contacts";
+import { SectionsInformation } from "../sections/information";
 
 export const Main = ({ refs }) => {
   return (
@@ -9,7 +9,7 @@ export const Main = ({ refs }) => {
       <div className={boxClass}>
         <SectionsAbout />
         <SectionsServices />
-        <SectionsContacts />
+        <SectionsInformation />
       </div>
     </main>
   );

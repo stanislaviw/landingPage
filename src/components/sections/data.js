@@ -1,7 +1,7 @@
 import { ReactComponent as FisrtIcon } from "../assets/rabota-01.svg";
 import { ReactComponent as SecondIcon } from "../assets/rabota-02.svg";
-import { ReactComponent as ThirdIcon } from "../assets/rabota-03.svg";
-import { ReactComponent as FourthIcon } from "../assets/rabota-10.svg";
+import { ReactComponent as FourthIcon } from "../assets/rabota-03.svg";
+import { ReactComponent as ThirdIcon } from "../assets/rabota-10.svg";
 import { ReactComponent as FifthIcon } from "../assets/rabota-05.svg";
 import { ReactComponent as SixthIcon } from "../assets/rabota-06.svg";
 import { ReactComponent as SeventhIcon } from "../assets/rabota-09.svg";
@@ -29,78 +29,6 @@ export const data = [
     icon: <SecondIcon />,
   },
   {
-    title: "Електротехніка",
-    servises: [
-      "Підключення генераторів(діагностика/cервіс/ремонт",
-      "Встановлення стабілізаторів напруги",
-      "Збір електрощитів(битових та промислових)",
-      "Сервіс",
-    ],
-    icon: <ThirdIcon />,
-  },
-  {
-    title: "Розумний дім",
-    servises: [
-      "Підключення",
-      "Обслуговування",
-      "Монтаж електропроводки для дому",
-      "Підключення та установка відеоспостереження",
-    ],
-    icon: <FourthIcon />,
-  },
-  {
-    title: "Промислові системи автоматизації",
-    servises: [
-      "Модернізація обладнання",
-      "Налаштування",
-      "Обслуговування",
-      "Діагностика станків та електроприладів",
-    ],
-    icon: <FifthIcon />,
-  },
-  {
-    title: "Басейни та сауни",
-    servises: [
-      "Обслуговування електропристроїв",
-      "Діагностика блоків управління перетворювачів чистот",
-    ],
-    icon: <SixthIcon />,
-  },
-  {
-    title: "Ліфти",
-    servises: [
-      "Обслуговування",
-      "Ремонт",
-      "Пошук поломок",
-      "Консультація по стану",
-      "Запуск зупинених кабін",
-      "Евакуація пасажирів",
-    ],
-    icon: <SeventhIcon />,
-  },
-];
-
-export const data1 = [
-  {
-    title: "Підключення електрообладнання",
-    servises: [
-      "Генератор",
-      "Стабілізатор",
-      "Вентиляція",
-      "Електрокотел",
-      "Електрична тепла підлога",
-      "Частотник VF",
-      "Мото-редуктор",
-      "Заземлення",
-    ],
-    icon: <FisrtIcon />,
-  },
-  {
-    title: "Сервіс електрообладнання",
-    servises: ["Діагностика", "Ремонт", "Наладка"],
-    icon: <SecondIcon />,
-  },
-  {
     title: "Розумний дім",
     servises: [
       "Моніторинг (електроенергії, води, газу, температури, тиску, CO2)",
@@ -108,7 +36,7 @@ export const data1 = [
       "Бездротовий інтерфейс Wi-Fi (підключення, обслуговування)",
       "Віддалене керування навантаженням",
     ],
-    icon: <FourthIcon />,
+    icon: <ThirdIcon />,
   },
   {
     title: "Насоси та насосні станції",
@@ -152,7 +80,7 @@ export const data1 = [
       "Монтаж",
       "Підключення",
       "Наладка",
-      "Щит обліку з лічільником, Щит освітлення, щит  автоматичного управління обладнанням, щит автоматичного вводу резерву",
+      "Щит обліку з лічільником, щит освітлення, щит автоматичного управління обладнанням, щит автоматичного вводу резерву",
     ],
     icon: <SeventhIcon />,
   },

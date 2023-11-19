@@ -1,31 +1,33 @@
 import { css } from "@emotion/css";
-import { PHONE_NUMBER } from "../../constants/constants";
 import BACKGROUND_IMAGE from "../assets/background.png";
 
-export const SectionsContacts = () => {
+export const SectionsInformation = () => {
   return (
-    <section className={mainClass}>
+    <section id="about" className={mainClass}>
       <div className={contentClass}>
         <img src={BACKGROUND_IMAGE} className={imageClass} alt="background" />
         <div className={boxClass}>
           <div className={textBoxClass}>
             <h2 className={titleClass}>Інформація про нас</h2>
             <p className={textClass}>
+              Електрик із досвідом та відповідальним підходом до роботи готовий
+              надати свої послуги у Києві та області. Незалежно від того, чи це
+              потреба у встановленні нової електромережі, ремонті чи заміні
+              електрообладнання, чи допомога у вирішенні проблем з електрикою,
+              забезпечуємо професійний та якісний підхід до кожного завдання.
+            </p>
+            <p className={textClass}>
               Також до основних послуг можна додати закупівлю обладнання,
               запчастин, елементів устаткування. Підбір електричного обладнання,
               роботи пов’язані з проектуванням електричних компонентів.
             </p>
-          </div>
-          {/* <div className={aboutBoxClass}>
-            <h2 className={titleClass}>Контакти:</h2>
-            <p className={textClass}>
-              Зв'язатись з нами ви можете по телефону:
+            <p className={lastBlockClass}>
+              Eлектрик завжди готовий приїхати у зручний для вас час та
+              оперативно вирішити ваше запитання з електроенергією. Наші послуги
+              доступні з урахуванням потреб клієнта та гарантують безпеку та
+              надійність електропостачання в вашому будинку чи офісі.
             </p>
-            <p className={textClass}>{PHONE_NUMBER} (Павло)</p>
-            <p className={textClass}>Або через месенджери по цьому ж номеру:</p>
-            <p className={textClass}>Viber</p>
-            <p className={textClass}>Telegram</p>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
@@ -63,6 +65,7 @@ const boxClass = css`
 
   @media (max-width: 800px) {
     padding: 20px;
+    width: calc(100% - 20px);
   }
 `;
 
@@ -71,14 +74,6 @@ const textBoxClass = css`
   width: 100%;
   flex-direction: column;
   gap: 10px;
-`;
-
-const aboutBoxClass = css`
-  ${textBoxClass};
-
-  @media (max-width: 1100px) {
-    display: none;
-  }
 `;
 
 const titleClass = css`
@@ -99,10 +94,19 @@ const textClass = css`
   font-size: 18px;
   font-family: Inter;
   font-weight: 400;
+  line-height: 140%;
   word-wrap: break-word;
 
   @media (max-width: 800px) {
     font-size: 14px;
+  }
+`;
+
+const lastBlockClass = css`
+  ${textClass};
+
+  @media (max-width: 800px) {
+    display: none;
   }
 `;
 
