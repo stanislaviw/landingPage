@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/landingPage/static/css/main.bc9c5e1b.css",
+    "main.js": "/landingPage/static/js/main.03b10afc.js",
+    "static/media/background.png": "/landingPage/static/media/background.c2c3588887efbcd046e2.png",
+    "static/media/Inter-ExtraBold.ttf": "/landingPage/static/media/Inter-ExtraBold.4164cfba15dbca5f37aa.ttf",
+    "static/media/Inter-Black.ttf": "/landingPage/static/media/Inter-Black.83d81b169bedf85385f2.ttf",
+    "static/media/Inter-Bold.ttf": "/landingPage/static/media/Inter-Bold.0eaf807b1cf0eceabe0f.ttf",
+    "static/media/Inter-SemiBold.ttf": "/landingPage/static/media/Inter-SemiBold.6058d3da655fb35169c2.ttf",
+    "static/media/Inter-Medium.ttf": "/landingPage/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
+    "static/media/Inter-Light.ttf": "/landingPage/static/media/Inter-Light.02850f28027788580733.ttf",
+    "static/media/Inter-Regular.ttf": "/landingPage/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/rabota-01.svg": "/landingPage/static/media/rabota-01.6587b7c04c83eaeb4ab693f4e001505e.svg",
+    "static/media/rabota-10.svg": "/landingPage/static/media/rabota-10.18f3de7ef5cc97c15b76935848cac18c.svg",
+    "static/media/rabota-09.svg": "/landingPage/static/media/rabota-09.c0e3dd0f35dd843bcc4b102a1f0a2b9e.svg",
+    "static/media/rabota-06.svg": "/landingPage/static/media/rabota-06.b5f7e06f8cd615e437ad572fbf0803fd.svg",
+    "static/media/rabota-12.svg": "/landingPage/static/media/rabota-12.8addf520f81cd72c16815748ebe47428.svg",
+    "static/media/rabota-02.svg": "/landingPage/static/media/rabota-02.2f115d6318fd05570eb02cb5ad1ac504.svg",
+    "static/media/rabota-11.svg": "/landingPage/static/media/rabota-11.6388e3db24aef6e76b39c8d2957fbe8a.svg",
+    "static/media/rabota-05.svg": "/landingPage/static/media/rabota-05.a1858eb6f794a7f983cfcf57fb859f97.svg",
+    "static/media/rabota-03.svg": "/landingPage/static/media/rabota-03.6b38a416c76736b27c315833cdb351d1.svg",
+    "static/media/viber.svg": "/landingPage/static/media/viber.becfe4daab6e8183259c98f483e633b7.svg",
+    "static/media/telegram.svg": "/landingPage/static/media/telegram.b39684d8a8c2a548aec79bb7f6c09a34.svg",
+    "static/media/copy.svg": "/landingPage/static/media/copy.07f44b3064a7783908da2738e931ef6d.svg",
+    "index.html": "/landingPage/index.html",
+    "main.bc9c5e1b.css.map": "/landingPage/static/css/main.bc9c5e1b.css.map",
+    "main.03b10afc.js.map": "/landingPage/static/js/main.03b10afc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc9c5e1b.css",
+    "static/js/main.03b10afc.js"
+  ]
+}
