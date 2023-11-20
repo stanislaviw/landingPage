@@ -18,16 +18,16 @@ export const Footer = () => {
           <div className={footerBoxClass}>
             <h5 className={titleClass}>Навігація</h5>
             <button
-              onClick={() => scrollToSection("about")}
-              className={buttonClass}
-            >
-              Про нас
-            </button>
-            <button
               onClick={() => scrollToSection("services")}
               className={buttonClass}
             >
               Послуги
+            </button>
+            <button
+              onClick={() => scrollToSection("about")}
+              className={buttonClass}
+            >
+              Про нас
             </button>
           </div>
           <div className={footerBoxClass}>
@@ -63,8 +63,7 @@ export const Footer = () => {
 };
 
 const mainClass = css`
-  ${"" /* background: #461b0d; */}
-  background: #1A1A1A;
+  background: #1a1a1a;
   color: white;
   flex-shrink: 0;
   width: 100%;
@@ -95,6 +94,7 @@ const contentClass = css`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 20px;
   }
 `;
@@ -128,6 +128,12 @@ const footerBoxClass = css`
   display: flex;
   flex-direction: column;
   gap: 4px;
+
+  @media (max-width: 800px) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const mediaClass = css`
@@ -136,6 +142,12 @@ const mediaClass = css`
   gap: 4px;
   align-items: center;
   cursor: pointer;
+
+  @media (max-width: 800px) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const iconClass = css`

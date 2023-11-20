@@ -9,7 +9,7 @@ export const SectionsServices = () => {
         <h2 className={titleClass}>Послуги</h2>
         <p className={textClass}>
           Будь-які послуги, які не представлені тут можуть бути обговорені по
-          телефону
+          телефону.
         </p>
       </div>
       <div className={servicesClass}>

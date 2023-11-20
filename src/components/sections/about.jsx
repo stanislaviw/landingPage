@@ -1,10 +1,29 @@
-import { css } from "@emotion/css";
+import { css, cx } from "@emotion/css";
 import { PHONE_NUMBER } from "../../constants/constants";
 import { ReactComponent as CopyIcon } from "../../components/assets/copy.svg";
+import { useState } from "react";
 
 export const SectionsAbout = () => {
-  const copyToClipboard = async (value) => {
-    await navigator.clipboard.writeText(value.toString());
+  const [isShown, setIsShown] = useState(false);
+
+  let timeoutId;
+
+  const handleClick = async () => {
+    try {
+      await navigator.clipboard.writeText(PHONE_NUMBER);
+      setIsShown(true);
+
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+
+      timeoutId = setTimeout(() => {
+        setIsShown(false);
+        timeoutId = null;
+      }, 2000);
+    } catch (err) {
+      console.error("Не вдалося скопіювати текст: ", err);
+    }
   };
 
   return (
@@ -14,16 +33,21 @@ export const SectionsAbout = () => {
           <h2 className={titleClass}>
             Електрик в Києві <br /> та області
           </h2>
-          <p
-            className={phoneClass}
-            type="button"
-            onClick={() => copyToClipboard(PHONE_NUMBER)}
-          >
-            {PHONE_NUMBER}
-            <CopyIcon className={iconClass} />
+          <p className={phoneClass}>
+            <span type="button" onClick={handleClick}>
+              {PHONE_NUMBER}
+            </span>
+            <CopyIcon
+              className={iconClass}
+              type="button"
+              onClick={handleClick}
+            />
+            <div className={cx(toastClass, isShown && activeToast)}>
+              Скопійовано
+            </div>
           </p>
           <div>
-            <p>Електрик, електромеханік, електрик КІПтаА</p>
+            <p>Електрик, електромеханік, електрик КІПтаА.</p>
             <p>Ремонт будь-якої складності. Якісно, надійно, професійно.</p>
           </div>
         </div>
@@ -60,6 +84,7 @@ const textBoxClass = css`
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
 `;
 
 const iconClass = css`
@@ -69,6 +94,11 @@ const iconClass = css`
   @media (max-width: 800px) {
     height: 30px;
     width: 30px;
+  }
+
+  @media (max-width: 400px) {
+    height: 22px;
+    width: 22px;
   }
 `;
 
@@ -113,3 +143,33 @@ const phoneClass = css`
 //   overflow: hidden;
 //   background: #4762ff;
 // `;
+
+const toastClass = css`
+  padding: 10px;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  word-wrap: break-word;
+  background: #333333;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  position: absolute;
+  right: -30px;
+  top: 100px;
+
+  @media (max-width: 800px) {
+    font-size: 12px;
+    height: 30px;
+    right: 0;
+    top: 50px;
+  }
+`;
+
+const activeToast = css`
+  opacity: 1;
+`;

@@ -13,7 +13,7 @@ export const SectionsServicesCard = ({ item }) => {
         <ul className={boxClass}>
           {servises.map((item, index) => (
             <li key={index} className={textClass}>
-              - {item};
+              - {item}.
             </li>
           ))}
         </ul>
