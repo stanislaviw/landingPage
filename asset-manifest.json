@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/landingPage/static/css/main.bc9c5e1b.css",
-    "main.js": "/landingPage/static/js/main.5b228356.js",
+    "main.js": "/landingPage/static/js/main.25ad756a.js",
     "static/media/background.png": "/landingPage/static/media/background.c2c3588887efbcd046e2.png",
     "static/media/Inter-ExtraBold.ttf": "/landingPage/static/media/Inter-ExtraBold.4164cfba15dbca5f37aa.ttf",
     "static/media/Inter-Black.ttf": "/landingPage/static/media/Inter-Black.83d81b169bedf85385f2.ttf",
@@ -19,15 +19,16 @@
     "static/media/rabota-11.svg": "/landingPage/static/media/rabota-11.6388e3db24aef6e76b39c8d2957fbe8a.svg",
     "static/media/rabota-05.svg": "/landingPage/static/media/rabota-05.a1858eb6f794a7f983cfcf57fb859f97.svg",
     "static/media/rabota-03.svg": "/landingPage/static/media/rabota-03.6b38a416c76736b27c315833cdb351d1.svg",
+    "static/media/acum.svg": "/landingPage/static/media/acum.ba26c0adc58a05a6eca783ec1b2a73ad.svg",
     "static/media/viber.svg": "/landingPage/static/media/viber.becfe4daab6e8183259c98f483e633b7.svg",
     "static/media/telegram.svg": "/landingPage/static/media/telegram.b39684d8a8c2a548aec79bb7f6c09a34.svg",
     "static/media/copy.svg": "/landingPage/static/media/copy.07f44b3064a7783908da2738e931ef6d.svg",
     "index.html": "/landingPage/index.html",
     "main.bc9c5e1b.css.map": "/landingPage/static/css/main.bc9c5e1b.css.map",
-    "main.5b228356.js.map": "/landingPage/static/js/main.5b228356.js.map"
+    "main.25ad756a.js.map": "/landingPage/static/js/main.25ad756a.js.map"
   },
   "entrypoints": [
     "static/css/main.bc9c5e1b.css",
-    "static/js/main.5b228356.js"
+    "static/js/main.25ad756a.js"
   ]
 }
