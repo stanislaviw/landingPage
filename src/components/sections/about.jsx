@@ -1,6 +1,7 @@
 import { css, cx } from "@emotion/css";
 import { PHONE_NUMBER } from "../../constants/constants";
 import { ReactComponent as CopyIcon } from "../../components/assets/copy.svg";
+import { ReactComponent as AcumIcon } from "../../components/assets/acum.svg";
 import { useState } from "react";
 
 export const SectionsAbout = () => {
@@ -52,7 +53,9 @@ export const SectionsAbout = () => {
           </div>
         </div>
       </div>
-      {/* <div className={imageBoxClass}></div> */}
+      <div className={imageBoxClass}>
+        <AcumIcon />
+      </div>
     </section>
   );
 };
@@ -70,6 +73,8 @@ const mainClass = css`
   @media (max-width: 800px) {
     padding: 20px 10px 0 10px;
     height: 400px;
+    flex-direction: column;
+    height: fit-content;
   }
 `;
 
@@ -137,12 +142,20 @@ const phoneClass = css`
   }
 `;
 
-// const imageBoxClass = css`
-//   width: 500px;
-//   height: 500px;
-//   overflow: hidden;
-//   background: #4762ff;
-// `;
+const imageBoxClass = css`
+  width: 500px;
+  height: 500px;
+
+  @media (max-width: 800px) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: 400px) {
+    width: 250px;
+    height: 250px;
+  }
+`;
 
 const toastClass = css`
   padding: 10px;
