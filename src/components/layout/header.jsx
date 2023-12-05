@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header id="top" className={mainClass}>
       <div className={boxClass}>
-        <a className={logoClass} href="/landingPage">
+        <a className={logoClass} href="/">
           ELECTRO
         </a>
         <div className={routesBoxClass}>

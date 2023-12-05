@@ -71,10 +71,11 @@ const mainClass = css`
   height: 600px;
 
   @media (max-width: 800px) {
-    padding: 20px 10px 0 10px;
+    padding: 50px 10px 0 10px;
     height: 400px;
     flex-direction: column;
     height: fit-content;
+    gap: 40px;
   }
 `;
 
